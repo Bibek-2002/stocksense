@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+  --forest: #183b2c;
+  --forest-deep: #10291f;
+  --paper: #f3f4ef;
+  --ink: #17251c;
+  --muted: #69746b;
+  --line: #d9ded6;
+  --amber: #d2aa4d;
+  --amber-deep: #8b702b;
+  --sans: 'DM Sans', 'Segoe UI', sans-serif;
+  --display: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+
+  font: 14px/1.5 var(--sans);
+  color: var(--ink);
+  background: var(--paper);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* { box-sizing: border-box; }
+body { min-width: 320px; min-height: 100vh; margin: 0; }
+button, input { font: inherit; }
+button, a { -webkit-tap-highlight-color: transparent; }
+p { margin: 0; }
+.eyebrow { color: var(--amber-deep); font-size: 10px; font-weight: 700; letter-spacing: .15em; line-height: 1.4; text-transform: uppercase; }
