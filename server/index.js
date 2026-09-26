@@ -14,6 +14,7 @@ app.use('/api/auth', require('./routes/authRoutes'));
 app.use('/api/categories', require('./routes/categoryRoutes'));
 app.use('/api/locations', require('./routes/locationRoutes'));
 app.use('/api/products', require('./routes/productRoutes'));
+app.use('/api/operations', require('./routes/operationRoutes'));
 
 app.get('/api/health', (req, res) => {
   res.json({ status: 'ok', message: 'StockSense API is running' });
