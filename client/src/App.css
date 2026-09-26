@@ -268,3 +268,34 @@
   .receipt-heading { align-items: start; flex-direction: column; }
   .receipt-line { grid-template-columns: 22px minmax(0, 1fr) 80px 32px; gap: 7px; }
 }
+
+.delta-positive { color: #315e3c !important; }
+.delta-negative { color: #a23f32 !important; }
+.delta-positive b, .delta-negative b { font-variant-numeric: tabular-nums; }
+.ledger-heading { display: flex; align-items: end; justify-content: space-between; gap: 18px; }
+.ledger-table-scroll { margin-top: 23px; }
+.ledger-table { min-width: 950px; }
+.ledger-table th { background: #fff; }
+.ledger-table td { white-space: normal; }
+.ledger-date { min-width: 145px; color: var(--muted) !important; font-size: 11px !important; font-variant-numeric: tabular-nums; }
+.ledger-table .product-name-cell { min-width: 145px; }
+.ledger-sku { display: block; margin-top: 3px; color: var(--muted); font-family: var(--mono); font-size: 10px; font-weight: 400; }
+.ledger-type { display: inline-flex; min-height: 22px; align-items: center; padding: 0 7px; border: 1px solid #d9ded6; color: #48554b; background: #f7f8f5; font-size: 10px; font-weight: 700; text-transform: capitalize; }
+.ledger-receipt { border-color: #b9d5c0; color: #315e3c; background: #f0f7f1; }
+.ledger-delivery { border-color: #dfc0bb; color: #8c3e32; background: #fff5f2; }
+.ledger-internal { border-color: #bfd0da; color: #3f667c; background: #f2f7fa; }
+.ledger-adjustment { border-color: #e4d6a8; color: #765f24; background: #fffdf5; }
+.ledger-quantity { font-variant-numeric: tabular-nums; font-weight: 700; }
+.ledger-reference { min-width: 160px; max-width: 260px; }
+.ledger-pagination { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-top: 15px; color: var(--muted); font-size: 11px; }
+.ledger-pagination > div { display: flex; align-items: center; gap: 9px; }
+.ledger-page-number { min-width: 75px; color: var(--ink); text-align: center; }
+.ledger-pagination .quiet-button { min-height: 32px; }
+.ledger-pagination .quiet-button:disabled { opacity: .5; cursor: not-allowed; }
+.ledger-error { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-top: 22px; padding: 14px 0; border-bottom: 1px solid var(--line); color: #762d25; font-size: 12px; }
+
+@media (max-width: 600px) {
+  .ledger-heading { align-items: start; flex-direction: column; }
+  .ledger-pagination { align-items: start; flex-direction: column; }
+  .ledger-pagination > div { width: 100%; justify-content: space-between; }
+}
